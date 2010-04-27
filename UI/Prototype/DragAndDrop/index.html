@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<script type="text/javascript" 
+		   src="../js/prototype.js">
+		</script>
+		<script type="text/javascript" 
+		   src="../js/scriptaculous.js?load=effects,dragdrop">
+		</script>		
+
+		<style type="text/css">
+		#draggables {
+		   width: 172px;
+		   border: 3px ridge blue;
+		   padding: 9px;
+		}
+		#droparea {
+		   margin-left: 16px;
+		   width: 172px;
+		   border: 3px ridge maroon;
+		   text-align: center;
+		   font-size: 24px;
+		   padding: 9px;
+		   float: left;
+		}
+		.hoverActive {
+		   background-color: #ffffcc;
+		}
+		#draggables img, #droparea img {
+		   margin: 4px;
+		   border:1px solid red;
+		}
+		</style>
+</head>
+<body>
+	<ul id="draggables">
+		<li> first </li>
+		<li> second </li>
+		<li> third </li>
+		<li> fourth </li>
+		<li> five </li>
+		<li> six </li>
+	</ul>
+	
+	<ul id="droparea">
+	  
+	</ul>
+	</body>
+	<script>
+		  Sortable.create('droparea',{constraint:false,dropOnEmpty:true,containment:['draggables','droparea']});
+		  Sortable.create('draggables',{constraint:false,dropOnEmpty:true,containment:['draggables','droparea']});
+	</script>
+</html>
