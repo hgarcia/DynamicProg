@@ -23,9 +23,7 @@
             
                 <ul id="menu">              
                     <li><%= Html.ActionLink("Home", "Index", "Home")%></li>
-                    <% if (Request.IsAuthenticated) { %>
                     <li><%=Html.ActionLink("Publish", "Index", "Publish")%></li>
-                    <% } %>
                     <li><%= Html.ActionLink("About", "About", "Home")%></li>
                 </ul>
             

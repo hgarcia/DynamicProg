@@ -8,12 +8,8 @@
 
     <h2>Published pets.</h2>
 
-    <table>
+    <table id="list">
         <tr>
-            <th></th>
-            <th>
-                Id
-            </th>
             <th>
                 Name
             </th>
@@ -21,7 +17,10 @@
                 Age
             </th>
             <th>
-                Picture
+                Breed
+            </th>
+            <th>
+                Status
             </th>
         </tr>
 
@@ -29,21 +28,16 @@
     
         <tr>
             <td>
-                <%= Html.ActionLink("Edit", "Edit", new {  id=item.Id}) %> |
-                <%= Html.ActionLink("Details", "Details", new { id = item.Id })%> |
-                <%= Html.ActionLink("Delete", "Delete", new { id = item.Id })%>
-            </td>
-            <td>
-                <%= Html.Encode(item.Id) %>
-            </td>
-            <td>
                 <%= Html.Encode(item.Name) %>
             </td>
             <td>
                 <%= Html.Encode(item.Age) %>
             </td>
             <td>
-                <%= Html.Encode(item.Picture) %>
+                <%= Html.Encode(item.Breed.Name) %>
+            </td>
+            <td>
+            <%= Html.Encode(item.Status.Name) %>
             </td>
         </tr>
     

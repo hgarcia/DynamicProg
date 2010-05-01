@@ -17,4 +17,3 @@ Scenario: Search by gender
 	Given I have selected a gender
 	When I press "Search"
 	Then I should see only pets of that gender
-	

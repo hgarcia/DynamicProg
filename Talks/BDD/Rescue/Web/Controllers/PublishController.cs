@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using Domain.Model;
+using Domain.Repositories;
 
 namespace Web.Controllers
 {
@@ -8,95 +11,59 @@ namespace Web.Controllers
     {
         //
         // GET: /Publish/
-
         public ActionResult Index()
         {
-            return View(new List<Pet>{new Pet()});
-        }
+            IEnumerable<Pet> pets = new List<Pet>();
+            var repo = new Repository<Pet>();
+            pets = repo.GetAll();
 
-        //
-        // GET: /Publish/Details/5
-
-        public ActionResult Details(int id)
-        {
-            return View();
+            //return View();
+            return View(pets);
         }
 
         //
         // GET: /Publish/Create
-
         public ActionResult Create()
         {
-            return View();
-        } 
+            var breeds = new Repository<Animal>().GetAll().First(an => an.Name.ToLower() == "dog").Breeds.Select(t => new SelectListItem
+            {
+                Text = t.Name,
+                Value = t.Name
+            });
+            var status = new Repository<Status>().GetAll().Select(t => new SelectListItem
+                                                                           {
+                                                                               Text = t.Name,
+                                                                               Value = t.Name
+                                                                           });
+            var viewModel = new PetViewModel { Breeds = breeds, Statuses = status };
+            return View(viewModel);
+            //return View();
+        }
 
         //
         // POST: /Publish/Create
-
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(FormCollection petmodel)
         {
             try
             {
-                // TODO: Add insert logic here
+                var repo = new Repository<Pet>();
+                var pet = new Pet
+                                  {
+                                      Id = Guid.NewGuid(),
+                                      Age = Convert.ToInt32(petmodel["Age"]),
+                                      Breed = new Breed { Name = petmodel["Breed"] },
+                                      Name = petmodel["Name"],
+                                      Status = new Status() { Name = petmodel["Status"] }
+                                  };
+                repo.Create(pet);
+
 
                 return RedirectToAction("Index");
             }
             catch
             {
-                return View();
-            }
-        }
-        
-        //
-        // GET: /Publish/Edit/5
- 
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        //
-        // POST: /Publish/Edit/5
-
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        //
-        // GET: /Publish/Delete/5
- 
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        //
-        // POST: /Publish/Delete/5
-
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
+                return View(petmodel);
             }
         }
     }

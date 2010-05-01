@@ -1,23 +1,6 @@
--Gherkin files examples.
-	-Gherkin syntax
-	-Writen by the business
+SpecFlow:
 
--SpecFlow
-	-http://specflow.org/
-	-http://www.techtalk.at/
-	-BSD License
-	-Installers for both VS2008 and VS2010
-	
--Rescue: 
-	Login as normal user
-	Publish
-	-Using tables
-	Search
+Create the link.
+Create the controller.
+Create the views.
 
--Changing the design, ex: instead of text use images as links.
--Using setups and teardown.
--Capture screens to demostrate success or failure.
--Adding tests to an existing application (legacy classic asp).
--Running via the NUnit runner.
--Running as part of your CI server.
--Gherkin editor.

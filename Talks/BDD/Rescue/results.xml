@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="Specs\bin\debug\Rescue.Specs.dll" total="6" errors="0" failures="0" not-run="0" inconclusive="6" ignored="0" skipped="0" invalid="0" date="2010-04-30" time="23:16:08">
+  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Development\Code\DynamicProg\Talks\BDD\Rescue" machine-name="HERNAN-STUDIO" user="hernan" user-domain="HERNAN-STUDIO" />
+  <culture-info current-culture="en-CA" current-uiculture="en-US" />
+  <test-suite name="Specs\bin\debug\Rescue.Specs.dll" executed="True" success="False" time="0.661" asserts="0">
+    <results>
+      <test-suite name="Specs" executed="True" success="False" time="0.649" asserts="0">
+        <results>
+          <test-suite name="PublishFeature" description="Publish" executed="True" success="False" time="0.578" asserts="0">
+            <results>
+              <test-case name="Specs.PublishFeature.AddANewPet" description="Add a new pet" executed="True" success="False" time="0.482" asserts="0" />
+              <test-case name="Specs.PublishFeature.BrowseExistingPets" description="Browse existing pets" executed="True" success="False" time="0.009" asserts="0" />
+              <test-case name="Specs.PublishFeature.BrowseWithNoPetsPublished" description="Browse with no pets published" executed="True" success="False" time="0.028" asserts="0" />
+            </results>
+          </test-suite>
+          <test-suite name="SearchFeature" description="Search" executed="True" success="False" time="0.060" asserts="0">
+            <results>
+              <test-case name="Specs.SearchFeature.SearchByBreed" description="Search by breed" executed="True" success="False" time="0.029" asserts="0" />
+              <test-case name="Specs.SearchFeature.SearchByGender" description="Search by gender" executed="True" success="False" time="0.012" asserts="0" />
+              <test-case name="Specs.SearchFeature.SearchByStatus" description="Search by status" executed="True" success="False" time="0.010" asserts="0" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

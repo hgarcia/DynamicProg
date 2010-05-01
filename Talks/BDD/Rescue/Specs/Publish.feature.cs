@@ -27,8 +27,8 @@ namespace Specs
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Publish", "In order to get a new home for pets\r\nAs a Publisher\r\nI want to be able to publish" +
-                    " and edit pets", ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Publish", "In order to get a new home for pets\r\nAs a Rescuer\r\nI want to be able to publish a" +
+                    "nd edit pets", ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -51,17 +51,34 @@ namespace Specs
         }
         
         [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add a new pet")]
+        public virtual void AddANewPet()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a new pet", ((string[])(null)));
+#line 6
+this.ScenarioSetup(scenarioInfo);
+#line 7
+ testRunner.Given("I have entered all the information for a pet");
+#line 8
+ testRunner.When("I save the pet");
+#line 9
+ testRunner.Then("I should see the pet in the list");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Browse existing pets")]
         public virtual void BrowseExistingPets()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Browse existing pets", ((string[])(null)));
-#line 6
+#line 11
 this.ScenarioSetup(scenarioInfo);
-#line 7
-    testRunner.Given("I published the following pets");
-#line 8
+#line 12
+    testRunner.Given("I published some pets");
+#line 13
     testRunner.When("I click the \"Publish\" menu item");
-#line 9
+#line 14
     testRunner.Then("I should see a list of those pets");
 #line hidden
             testRunner.CollectScenarioErrors();
@@ -72,31 +89,14 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void BrowseWithNoPetsPublished()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Browse with no pets published", ((string[])(null)));
-#line 11
-this.ScenarioSetup(scenarioInfo);
-#line 12
-    testRunner.Given("I have not published pets");
-#line 13
-    testRunner.When("I click the \"Publish\" menu item");
-#line 14
-    testRunner.Then("I should see an empty table");
-#line hidden
-            testRunner.CollectScenarioErrors();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add a new pet")]
-        public virtual void AddANewPet()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a new pet", ((string[])(null)));
 #line 16
 this.ScenarioSetup(scenarioInfo);
 #line 17
- testRunner.Given("I have entered all the information for a pet like this");
+    testRunner.Given("I have not published pets");
 #line 18
- testRunner.When("I press Publish");
+    testRunner.When("I click the \"Publish\" menu item");
 #line 19
- testRunner.Then("I should see the pet in the list");
+    testRunner.Then("I should see an empty table");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

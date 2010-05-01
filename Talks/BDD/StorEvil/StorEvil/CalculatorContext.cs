@@ -23,7 +23,8 @@ namespace StorEvilSpecs
 
         //public void Then_the_result_should_be(int arg0)
         //{
-        //    _calculator.GetResult().ShouldEqual(arg0);
+        //    var result = _calculator.GetResult();
+        //    result.ShouldEqual(arg0);
         //}
     }
 }
