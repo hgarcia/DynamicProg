@@ -1,0 +1,132 @@
+<html>
+    <head>
+		<style type="text/css">	
+		body {
+			background: #ddd;
+			font-family: Interstate, "Lucida Grande",  Verdana, Arial, helvetica, sans-serif;
+			font-size:13px;
+			color: black;			
+		}
+		
+		div  {
+			padding:5x;			
+		}
+		
+		h1, h2, h3 {
+			padding:5px;
+			margin:0px;
+		}
+		
+		.story {			
+			background: #eee;
+			padding:5px 5px 10px 15px;
+			outline: 1px solid #ccc;
+			margin-bottom:10px;
+		}
+		.scenario, .suggestions {	
+			background: #fff;
+			outline: 1px solid #ccc;
+			padding:5px 5px 5px 15px;
+		}
+		.summary {
+			padding:10px 10px 5px 10px;
+		}
+		.scenario-failed, .summary-failed	{
+			background-color:#f99;
+		}
+	
+		.scenario-passed,.summary-passed	{
+			background-color:#8d8;
+		}
+		.scenario-pending,.summary-pending	{
+			background-color:#fd7;
+		}
+		
+		.suggestions h3 {
+			background: #ccc;
+		}
+		
+		.line-failed	{
+			color:red;			
+		}
+		
+		.line-passed	{
+			color:green;
+		}
+		
+		.line-pending	{
+			color:#981;
+		}
+		
+		.line-failed, .line-passed, .line-pending {
+			font-family: Consolas, monospace
+		}
+		
+		.failure-message {
+			padding:10px;
+			font-weight:bold;
+			color:Red;			
+		}
+	</style>
+    </head>
+    <body>
+        <h1>StorEvil Run Report</h1>
+		<div class="summary"><div class="summary-passed">
+				3 Passed
+			</div>
+		</div><div class="stories-wrapper"><div class="story">    
+                <h2>Feature: Adding two numbers<br/>As an accountant<br/>I want to use a calculator<br/>So I don't make mistakes</h2> 
+				<div class="summary"><div class="summary-passed">
+						3 Passed
+					</div>
+				</div><div class="scenario">
+					<h3 class="scenario-passed">Add two positive numbers - Passed</h3>						
+						<div class="line-passed">						
+							Given I enter the number  1   <br/>
+						</div>						
+						<div class="line-passed">						
+							And enter the number  2    <br/>
+						</div>						
+						<div class="line-passed">						
+							When Add is been call<br/>
+						</div>						
+						<div class="line-passed">						
+							Then the result should be  3      <br/>
+						</div>
+
+				</div><div class="scenario">
+					<h3 class="scenario-passed">Add two positive numbers - Passed</h3>						
+						<div class="line-passed">						
+							Given I enter the number  4   <br/>
+						</div>						
+						<div class="line-passed">						
+							And enter the number  6    <br/>
+						</div>						
+						<div class="line-passed">						
+							When Add is been call<br/>
+						</div>						
+						<div class="line-passed">						
+							Then the result should be  10     <br/>
+						</div>
+
+				</div><div class="scenario">
+					<h3 class="scenario-passed">Add two positive numbers - Passed</h3>						
+						<div class="line-passed">						
+							Given I enter the number  2   <br/>
+						</div>						
+						<div class="line-passed">						
+							And enter the number  2    <br/>
+						</div>						
+						<div class="line-passed">						
+							When Add is been call<br/>
+						</div>						
+						<div class="line-passed">						
+							Then the result should be  4      <br/>
+						</div>
+
+				</div>
+
+            </div>
+        </div>
+    </body>
+</html>

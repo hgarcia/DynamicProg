@@ -1,0 +1,11 @@
+Feature: Adding two numbers
+	In order to don't make mistakes
+	As an accountant
+	I want to use a calculator
+
+Scenario: Add two positive numbers
+	Given I start the calculator
+	And enter number 25
+	And enter number 30
+	When I Add them
+	Then the result should be 55

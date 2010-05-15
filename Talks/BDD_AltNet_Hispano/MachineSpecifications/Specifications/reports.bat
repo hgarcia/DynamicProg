@@ -1,0 +1,1 @@
+C:\Development\Code\DynamicProg\Talks\BDD\lib\Machine.Specifications/mspec.exe --html ..\..\MachineSpecifications\Specifications\repot.html ..\..\MachineSpecifications\Specifications\bin\Debug\Specifications.dll

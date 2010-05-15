@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <ClassLibraryOutputDirectory>bin\$(Configuration)</ClassLibraryOutputDirectory>
+        <MigratorTasksPath>$(MSBuildProjectDirectory)..\..\libs\Migrator.Net</MigratorTasksPath>
+        <MigrationsProject>GetItDone.Migrations.csproj</MigrationsProject>
+    </PropertyGroup>
+    
+    <Import Project="$(MigratorTasksPath)\Migrator.Targets" />
+    
+    <Target Name="Build-Migrations">
+        <MSBuild Projects="$(MigrationsProject)" Targets="Build">
+            <Output TaskParameter="TargetOutputs" ItemName="MigrationAssemblies" />
+        </MSBuild>
+        
+        <Message Text="Built: @(MigrationAssemblies)"/>
+    </Target>
+    
+    <Target Name="Migrate" DependsOnTargets="Build-Migrations">
+        <Message Text="Migrating: @(MigrationAssemblies)"/>
+
+        <Migrate Provider="SqlServer"
+			Connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Development\Code\Net3.5\GetItDone\Db\GetItDone.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True"
+            Migrations="@(MigrationAssemblies)"
+            />
+    </Target>
+  
+    <Target Name="MigrateDown" DependsOnTargets="Build-Migrations">
+      <Message Text="Migrating: @(MigrationAssemblies)"/>
+      <CreateProperty Value="-1"  Condition="'$(SchemaVersion)'==''">
+        <Output TaskParameter="Value" PropertyName="SchemaVersion"/>
+      </CreateProperty>
+
+      <Migrate Provider="SqlServer"
+          Connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Development\Code\Net3.5\GetItDone\Db\GetItDone.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True"
+          Migrations="@(MigrationAssemblies)"
+            To="$(SchemaVersion)"/>
+    </Target>
+
+</Project>

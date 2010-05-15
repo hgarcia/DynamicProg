@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="StoryQ">
+</Property><Property Name="Solution File" Value="C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StoryQ\StoryQ.sln">
+</Property><Property Name="Date" Value="May-15-10">
+</Property><Property Name="Time" Value="9:50 AM">
+</Property></Properties><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Stories" Source="Stories\Stories.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Stories" Source="Stories\Stories.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="StoryQ.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="StoryQ.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Stories" Source="Stories\Stories.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,13 @@
+Story is Adding two numbers
+As an accountant
+I want to use a calculator
+So I don't make mistakes
+
+Scenario: Add two positive numbers
+Given I enter <first>
+And enter <second>
+When Add is been call
+Then the result should be <result>
+|first|second|result|
+|1    |2      |3     |
+|10    |32    |42    |

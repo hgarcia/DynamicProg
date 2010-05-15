@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="StorEvil">
+</Property><Property Name="Solution File" Value="C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\StorEvil.sln">
+</Property><Property Name="User Options File" Value="C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\StorEvil.suo">
+</Property><Property Name="Date" Value="May-15-10">
+</Property><Property Name="Time" Value="10:06 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="StorEvil.sln" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\StorEvil.sln">
+</Event><Event ErrorLevel="0" Project="" Source="StorEvil.suo" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\StorEvil.suo">
+</Event><Event ErrorLevel="0" Project="StorEvilSpecs" Source="StorEvil\StorEvilSpecs.csproj" Description="Project file successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\StorEvil\StorEvilSpecs.csproj">
+</Event><Event ErrorLevel="0" Project="StorEvilSpecs" Source="StorEvil\StorEvilSpecs.csproj.user" Description="Project user file successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\StorEvil\StorEvilSpecs.csproj.user">
+</Event><Event ErrorLevel="0" Project="StorEvilSpecs" Source="StorEvil\CalculatorContext.cs" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\StorEvil\CalculatorContext.cs">
+</Event><Event ErrorLevel="0" Project="StorEvilSpecs" Source="StorEvil\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\StorEvil\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="StorEvilSpecs" Source="StorEvil\StorEvilSpecs.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="StorEvilSpecs" Source="StorEvil\StorEvilSpecs.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Project file successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\Calculator\Calculator.csproj">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Basic.cs" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\Calculator\Basic.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\StorEvil\Backup\Calculator\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="StorEvil.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="StorEvil.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="StorEvilSpecs" Source="StorEvil\StorEvilSpecs.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

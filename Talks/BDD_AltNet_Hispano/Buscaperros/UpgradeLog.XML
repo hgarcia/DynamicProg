@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Buscaperros">
+</Property><Property Name="Solution File" Value="C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\Buscaperros\Buscaperros.sln">
+</Property><Property Name="Date" Value="May-15-10">
+</Property><Property Name="Time" Value="10:58 AM">
+</Property></Properties><Event ErrorLevel="0" Project="Web" Source="Web\Web.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Web" Source="Web\Web.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Domain" Source="Domain\Domain.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Domain" Source="Domain\Domain.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Specs" Source="Specs\Specs.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Specs" Source="Specs\Specs.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UiDriver" Source="UiDriver\UiDriver.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UiDriver" Source="UiDriver\UiDriver.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UnitTesting" Source="UnitTesting\UnitTesting.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UnitTesting" Source="UnitTesting\UnitTesting.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DemoData" Source="DemoData\DemoData.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DemoData" Source="DemoData\DemoData.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Buscaperros.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Buscaperros.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Web" Source="Web\Web.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Domain" Source="Domain\Domain.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Specs" Source="Specs\Specs.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="UiDriver" Source="UiDriver\UiDriver.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="UnitTesting" Source="UnitTesting\UnitTesting.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DemoData" Source="DemoData\DemoData.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

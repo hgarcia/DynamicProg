@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="Specs\bin\debug\Rescue.Specs.dll" total="3" errors="0" failures="0" not-run="0" inconclusive="2" ignored="0" skipped="0" invalid="0" date="2010-05-15" time="12:26:30">
+  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="c:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\Buscaperros" machine-name="HERNAN-STUDIO" user="hernan" user-domain="HERNAN-STUDIO" />
+  <culture-info current-culture="en-CA" current-uiculture="en-US" />
+  <test-suite name="Specs\bin\debug\Rescue.Specs.dll" executed="True" success="True" time="9.275" asserts="0">
+    <results>
+      <test-suite name="Specs" executed="True" success="True" time="9.229" asserts="0">
+        <results>
+          <test-suite name="PublishFeature" description="Publish" executed="True" success="True" time="9.222" asserts="0">
+            <results>
+              <test-case name="Specs.PublishFeature.AddANewPet" description="Add a new pet" executed="True" success="True" time="2.511" asserts="1" />
+              <test-case name="Specs.PublishFeature.BrowseExistingPets" description="Browse existing pets" executed="True" success="False" time="0.478" asserts="0" />
+              <test-case name="Specs.PublishFeature.BrowseWithNoPetsPublished" description="Browse with no pets published" executed="True" success="False" time="0.017" asserts="0" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

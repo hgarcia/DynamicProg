@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MachineSpecifications">
+</Property><Property Name="Solution File" Value="C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\MachineSpecifications.sln">
+</Property><Property Name="User Options File" Value="C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\MachineSpecifications.suo">
+</Property><Property Name="Date" Value="May-15-10">
+</Property><Property Name="Time" Value="10:25 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MachineSpecifications.sln" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\Backup\MachineSpecifications.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MachineSpecifications.suo" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\Backup\MachineSpecifications.suo">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Project file successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\Backup\Calculator\Calculator.csproj">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Basic.cs" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\Backup\Calculator\Basic.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\Backup\Calculator\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Specifications" Source="Specifications\Specifications.csproj" Description="Project file successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\Backup\Specifications\Specifications.csproj">
+</Event><Event ErrorLevel="0" Project="Specifications" Source="Specifications\When_adding_two_number.cs" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\Backup\Specifications\When_adding_two_number.cs">
+</Event><Event ErrorLevel="0" Project="Specifications" Source="Specifications\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\MachineSpecifications\Backup\Specifications\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Specifications" Source="Specifications\Specifications.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Specifications" Source="Specifications\Specifications.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MachineSpecifications.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MachineSpecifications.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Specifications" Source="Specifications\Specifications.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
