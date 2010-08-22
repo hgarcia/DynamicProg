@@ -19,7 +19,7 @@ namespace Specifications
         private It should_sum_both_numbers = () =>
                                   {
                                      _calculator.GetResult().ShouldEqual(50);
-                                 };
+                                   };
 
         private static Basic _calculator;
         //private static int _result;

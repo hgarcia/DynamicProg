@@ -23,6 +23,7 @@ namespace Stories
                 .And(EnterTheNumber,30)
                 .When(IAddThem)
                 .Then(TheResultShouldBe,55)
+                //.Execute();
                 .ExecuteWithReport(MethodBase.GetCurrentMethod());
         }
 

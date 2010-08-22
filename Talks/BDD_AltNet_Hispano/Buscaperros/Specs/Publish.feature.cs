@@ -30,7 +30,7 @@ namespace Specs
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Publish", "In order to get a new home for pets\r\nAs a Rescuer\r\nI want to be able to publish a" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("es-ES"), "Publish", "In order to get a new home for pets\r\nAs a Rescuer\r\nI want to be able to publish a" +
                     "nd edit pets", ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -58,13 +58,13 @@ namespace Specs
         public virtual void AddANewPet()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a new pet", ((string[])(null)));
-#line 6
-this.ScenarioSetup(scenarioInfo);
 #line 7
-testRunner.Given("I have entered all the information for a pet");
+this.ScenarioSetup(scenarioInfo);
 #line 8
-testRunner.When("I save the pet");
+testRunner.Given("I have entered all the information for a pet");
 #line 9
+testRunner.When("I save the pet");
+#line 10
 testRunner.Then("I should see the pet in the list");
 #line hidden
             testRunner.CollectScenarioErrors();
@@ -75,13 +75,13 @@ testRunner.Then("I should see the pet in the list");
         public virtual void BrowseExistingPets()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Browse existing pets", ((string[])(null)));
-#line 11
-this.ScenarioSetup(scenarioInfo);
 #line 12
-testRunner.Given("I published some pets");
+this.ScenarioSetup(scenarioInfo);
 #line 13
-testRunner.When("I click the \"Publish\" menu item");
+testRunner.Given("I published some pets");
 #line 14
+testRunner.When("I click the \"Publish\" menu item");
+#line 15
 testRunner.Then("I should see a list of those pets");
 #line hidden
             testRunner.CollectScenarioErrors();
@@ -92,13 +92,13 @@ testRunner.Then("I should see a list of those pets");
         public virtual void BrowseWithNoPetsPublished()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Browse with no pets published", ((string[])(null)));
-#line 16
-this.ScenarioSetup(scenarioInfo);
 #line 17
-testRunner.Given("I have not published pets");
+this.ScenarioSetup(scenarioInfo);
 #line 18
-testRunner.When("I click the \"Publish\" menu item");
+testRunner.Given("I have not published pets");
 #line 19
+testRunner.When("I click the \"Publish\" menu item");
+#line 20
 testRunner.Then("I should see an empty table");
 #line hidden
             testRunner.CollectScenarioErrors();

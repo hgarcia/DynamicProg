@@ -20,7 +20,7 @@ namespace Specs
         [BeforeFeature]
         public static void Setup()
         {
-            publish = new Rescue().GoTo<Publish>(); 
+            publish = new Rescue().GoTo<Publish>();
             //browser = new IE("http://rescue.com:1010/");
         }
         [Given(@"I have entered all the information for a pet")]
@@ -44,7 +44,6 @@ namespace Specs
         public void WhenISaveThePer()
         {
             publish.Save();
-
             //browser.Button(Find.ByValue("Create")).Click();
         }
 
