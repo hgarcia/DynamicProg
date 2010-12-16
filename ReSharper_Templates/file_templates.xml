@@ -1,4 +1,41 @@
 <TemplatesExport family="File Templates">
+  <Template uid="092579b7-aa10-4b31-b942-52f215199bbb" shortcut="" description="Machine_Spec" text="using Machine.Specifications;&#xD;&#xA;using $SUT$&#xD;&#xA;&#xD;&#xA;namespace $NAMESPACE$&#xD;&#xA;{&#xD;&#xA;    [Subject(&quot;$SUBJECT$&quot;)]&#xD;&#xA;    public class $CLASS_NAME$&#xD;&#xA;    {&#xD;&#xA;        private Establish context = () =&gt;&#xD;&#xA;                                        {&#xD;&#xA;                                            $CONTEXT$&#xD;&#xA;                                        };&#xD;&#xA;&#xD;&#xA;		Because $BECAUSE$ = () =&gt;&#xD;&#xA;        {&#xD;&#xA;            $BECAUSE_ACTION$&#xD;&#xA;        };&#xD;&#xA;        private It $SHOULD$ = () =&gt; { $SHOULD_ACTION$ };&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="SUT" expression="" initialRange="0" />
+      <Variable name="SUBJECT" expression="" initialRange="0" />
+      <Variable name="CLASS_NAME" expression="" initialRange="0" />
+      <Variable name="CONTEXT" expression="" initialRange="0" />
+      <Variable name="SHOULD" expression="" initialRange="0" />
+      <Variable name="BECAUSE" expression="" initialRange="0" />
+      <Variable name="SHOULD_ACTION" expression="" initialRange="0" />
+      <Variable name="BECAUSE_ACTION" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="08533e6e-4b3f-4f23-99fb-1c79ce7b59e2" shortcut="" description="Migration" text="using FluentMigrator;&#xD;&#xA; &#xD;&#xA;namespace $NAMESPACE$&#xD;&#xA;{&#xD;&#xA;[Migration($MIGRATIONNUMBER$)]&#xD;&#xA;public class m_$MIGRATIONNUMBER$ : Migration&#xD;&#xA;{&#xD;&#xA;  public override void Up()&#xD;&#xA;  {&#xD;&#xA;    $END$&#xD;&#xA;  }&#xD;&#xA; &#xD;&#xA; &#xD;&#xA;  public override void Down()&#xD;&#xA;  {&#xD;&#xA; &#xD;&#xA;  }&#xD;&#xA; &#xD;&#xA;}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="MIGRATIONNUMBER" expression="getCurrentTime(&quot;yyyyMMddHHmmss&quot;)" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="True" />
+    </CustomProperties>
+  </Template>
   <Template uid="3c049c0d-da26-405d-b240-b55e4767e3f4" shortcut="" description="Specs unit testing" text="using NUnit.Framework;&#xD;&#xA;using SharpTestsEx;&#xD;&#xA;&#xD;&#xA;namespace $Namespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    public class $ClassName$&#xD;&#xA;    {&#xD;&#xA;        [Test]&#xD;&#xA;        public void When_$THIS_HAPPEN$_Should_$RESULT$()&#xD;&#xA;        {&#xD;&#xA;            $END$&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
     <Context>
       <ProjectLanguageContext language="CSharp" />

@@ -1,0 +1,32 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="4c341bad-131f-43bf-86f7-b44155d0c563" shortcut="specbec" description="MachineSpec Because" text="Because $BECAUSE$ = () =&gt;&#xD;&#xA;        {&#xD;&#xA;            $BECAUSE_ACTION$&#xD;&#xA;        };" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="BECAUSE" expression="" initialRange="0" />
+      <Variable name="BECAUSE_ACTION" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="f5eee528-35a5-4fad-a59d-e0dad4bee7df" shortcut="specctxt" description="MSpec context" text="private Establish context = () =&gt;&#xD;&#xA;                                 {&#xD;&#xA;									$END$;&#xD;&#xA;                                 };" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="2f373938-c666-4b42-82e5-2795dcb00286" shortcut="specit" description="MSpec it" text="private It $IT$ = () =&gt; { $IT_ACTION$ };&#xD;&#xA;" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="IT" expression="" initialRange="0" />
+      <Variable name="IT_ACTION" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
