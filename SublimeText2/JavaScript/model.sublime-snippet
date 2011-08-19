@@ -1,0 +1,43 @@
+<snippet>
+    <content><![CDATA[
+var BaseModel = require('../../../base/baseModel').BaseModel;
+
+/**
+* Define the schema here.
+* Each key is a property:
+*   Each key can have an object with any of the following options.
+*
+*       defaultValue: The default value to use to set up the field (Default '', 0)
+*       type: And string specifying a given type
+*             string, number, date, array, object, bool are all valid options (Default string)
+*       max: A number indicating the maximun length (used for validation and UI) (Default 'infinity')
+*       min: A number indicating a minimun length requirement (used for validation and UI) (Default 0)
+*       label: A string with the english text to display in the UI for this field. (Default to the property name)
+*       internal: Boolean if set to true the field won't be shown by generated forms (default false)
+*       mandatory: Boolean (default false)
+*/
+var model = new BaseModel();
+model.schema = {
+    ${1:property}: {defaultValue: ${2:''}, type: ${3:'string'}}
+};
+
+/**
+* Uncomment this to add properties to the object
+*/
+/*
+model.methods = {
+    toString: function () {
+        console.log(this);
+    }
+};
+*/
+module.exports = function(db) {
+    model.collection = db.collection(${4:collection});
+    return model;
+};
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mdl</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
