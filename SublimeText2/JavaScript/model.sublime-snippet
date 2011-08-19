@@ -14,7 +14,7 @@ var BaseModel = require('../../../base/baseModel').BaseModel;
 *       min: A number indicating a minimun length requirement (used for validation and UI) (Default 0)
 *       label: A string with the english text to display in the UI for this field. (Default to the property name)
 *       internal: Boolean if set to true the field won't be shown by generated forms (default false)
-*       mandatory: Boolean (default false)
+*       required: Boolean (default false)
 */
 var model = new BaseModel();
 model.schema = {
