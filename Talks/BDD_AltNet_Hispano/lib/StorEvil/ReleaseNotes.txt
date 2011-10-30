@@ -7,42 +7,42 @@ DONE:
 
 	Debugging support
 		you can now set breakpoints in your plaintext file.
-		
+
 		For your StorEvil project, you can enable F5-debugging in Visual Studio as follows:
-		
+
 			1. Right-click on the project in Solution Explorer, go to "Properties"
 			2. Select the Debug tab
 			3. Choose "Start external program"
 			4. Enter the path to storevil.exe in the external program text box
 			5. Set the working directory to the project directory
-			
+
 			You should now be able to set the project as your startup project, set
-			some breakpoints in your feature files, and press F5. 
-			
+			some breakpoints in your feature files, and press F5.
+
 			In the Locals window you will see a variable named "Contexts" that contains all of the active context objects.
-			
+
 			StorEvil's output will be sent to the debug window.
 
 		For NUnit generation:
 			"Debug" your generated test (tested in the ReSharper runner)
-			
+
 		Fixed some bugs
-		
+
 		Brought R# runner up to the latest RC build.
-			
+
 	StorEvil now supports parsing multiple word enum values.
-	
+
 		For example:
 
 			public enum CityEnum {Seattle, NewYork, SanFrancisco}
 			public void When_I_Live_In(CityEnum city) {}
 
 		will now match any of the following
-			
+
 			When I live in New York
 			When I Live in Seattle
 			When I live in San Francisco
-	
+
 TODO:
 
 	Support multiple word parameters for strings (via [MultipleWords] attribute)
@@ -96,7 +96,7 @@ StorEvil version 0.2 release notes
 
 	- Generates stubs for any plaintext steps that could not be interpreted.
 
-	- usage: 
+	- usage:
 		storevil stub (--destination {destination_file_name} | --clipboard )
 
 	- if no args specified, it will write to stdout (the console)
@@ -104,7 +104,7 @@ StorEvil version 0.2 release notes
 	- Made some improvements to the suggestion engine when dealing with scenario outline parameters.
 
 	---------------------------------
-	Added two more example projects  
+	Added two more example projects
 	---------------------------------
 
 	- Bowling - features were copied from the SpecFlow project (note: different license for these files than the rest of StorEvil)
@@ -114,34 +114,34 @@ StorEvil version 0.2 release notes
 	---------------------------------
 	Parsing/interpreting improvements
 	---------------------------------
-	 
+
 	- double-quoted strings are treated as a single term
 
 		Given my name is "Foo Bar Baz Jr."
-	    
+
 	Maps to:
-		public void Given_my_name_is(string multiWordName) 
+		public void Given_my_name_is(string multiWordName)
 		{
-			// multiWordName = "Foo Bar Baz Jr."	
+			// multiWordName = "Foo Bar Baz Jr."
 		}
 
 	- everything after a colon is treated as a single term
 
 		Given some arbitrary text: foo bar baz
 	Maps to:
-		public void Given_some_arbitrary_text(string arbitraryText) 
+		public void Given_some_arbitrary_text(string arbitraryText)
 		{
-			// arbitraryText = "foo bar baz"	
+			// arbitraryText = "foo bar baz"
 		}
 	- comma-separated values can be automatically mapped to an array
 
 	For example:
 
 		Given the following numbers: 1,2,3,4,5
-	    
+
 	Maps to:
 
-		public void Given_the_following_numbers(int[] numbers) 
+		public void Given_the_following_numbers(int[] numbers)
 		{
 			// numbers[0] = 1, numbers[1] =2, etc...
 		}
@@ -160,25 +160,25 @@ StorEvil version 0.2 release notes
 
 		public class UserInfo {
 			string FirstName { get; set; }
-			string LastName { get; set; }		
+			string LastName { get; set; }
 		}
-		public void Given_the_following_user(UserInfo userInfo) 
+		public void Given_the_following_user(UserInfo userInfo)
 		{
-			// userInfo.FirstName will be "Foo" here 
+			// userInfo.FirstName will be "Foo" here
 		}
 
 	... or you could write the following:
-		public void Given_the_following_user(Hashtable info) 
-		{ 
+		public void Given_the_following_user(Hashtable info)
+		{
 			// info["FirstName"] will be "Foo"
 		}
-	    
+
 	-----------------
 	Tracing/debugging
 	-----------------
 	- Added command line switch @--debug@ which enables some tracing output
-	
-	
+
+
 TODO:
 
 consider acceptance vs. regression a la StoryTeller

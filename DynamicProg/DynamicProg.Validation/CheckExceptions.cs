@@ -6,7 +6,7 @@ namespace DynamicProg.Validation
     {
         public EmptyStringException(string objectName) : base(string.Format("The string {0} should not be empty.",objectName))
         {
-            
+
         }
     }
     public class MatchNotFoundException : Exception
@@ -31,7 +31,7 @@ namespace DynamicProg.Validation
     {
         public InvalidFormatException(string message):base(message)
         {
-            
+
         }
     }
 
@@ -57,7 +57,7 @@ namespace DynamicProg.Validation
         public NullOrEmptyStringException(string objectName):
             base(string.Format("The string {0} should not be empty or null", objectName))
         {
-            
+
         }
     }
 

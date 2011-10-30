@@ -41,7 +41,7 @@ namespace DynamicProg.Caching
         string Get(string key);
 
         ///<summary>
-        /// Adds an object to the cache for an absolute period of time. 
+        /// Adds an object to the cache for an absolute period of time.
         /// The object will be removed for sure after that period of time.
         /// The object may also be removed sooner if memory is needed.
         ///</summary>
@@ -52,7 +52,7 @@ namespace DynamicProg.Caching
         bool AddAndKeepFor(string key, object item, TimeSpan expiresAfter);
 
         ///<summary>
-        /// Adds an object to the cache for a rolling period of time. 
+        /// Adds an object to the cache for a rolling period of time.
         /// The object will be removed for sure after that period of time if there is no activity with it.
         /// The object may also be removed sooner if memory is needed.
         ///</summary>

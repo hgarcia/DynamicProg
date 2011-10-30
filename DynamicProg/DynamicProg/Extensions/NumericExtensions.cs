@@ -25,7 +25,7 @@ namespace DynamicProg.Extensions
 
         public static int PercentOf(this int percentOf, int value)
         {
-            return (value*percentOf)/100;               
+            return (value*percentOf)/100;
         }
 
         public static decimal PercentOf(this int percentOf, decimal value)

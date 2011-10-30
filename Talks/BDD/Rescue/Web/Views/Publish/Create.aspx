@@ -14,7 +14,7 @@
 
         <fieldset>
             <legend>Fields</legend>
-            
+
             <div class="editor-label">
                 <%= Html.LabelFor(model => model.Name) %>
             </div>
@@ -22,7 +22,7 @@
                 <%= Html.TextBoxFor(model => model.Name) %>
                 <%= Html.ValidationMessageFor(model => model.Name) %>
             </div>
-            
+
             <div class="editor-label">
                 <%= Html.LabelFor(model => model.Age) %>
             </div>
@@ -30,7 +30,7 @@
                 <%= Html.TextBoxFor(model => model.Age) %>
                 <%= Html.ValidationMessageFor(model => model.Age) %>
             </div>
-            
+
             <div class="editor-label">
                 <%= Html.LabelFor(model => model.Breed) %>
             </div>
@@ -38,14 +38,14 @@
                 <%= Html.DropDownListFor(model => model.Breed,Model.Breeds) %>
                 <%= Html.ValidationMessageFor(model => model.Breed)%>
             </div>
-             
+
             <div class="editor-label">
                 <%= Html.LabelFor(model => model.Status) %>
             </div>
             <div class="editor-field">
                 <%= Html.DropDownListFor(model => model.Status,Model.Statuses) %>
                 <%= Html.ValidationMessageFor(model => model.Status)%>
-            </div>           
+            </div>
             <p>
                 <input type="submit" value="Create" />
             </p>

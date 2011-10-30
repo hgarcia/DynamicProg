@@ -19,7 +19,7 @@ namespace UnitTest
                                  };
         [Test]
         public void Check_count_less_than_x_elements_and_gets_a_list_of_errors()
-        {       
+        {
             var list = new Validator().CheckThat(() => _collection).CountIsLessThan(5).List();
             Assert.That(list.ErrorsCollection.Count() > 0);
         }

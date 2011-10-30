@@ -25,7 +25,7 @@
         </tr>
 
     <% foreach (var item in Model) { %>
-    
+
         <tr>
             <td>
                 <%= Html.Encode(item.Name) %>
@@ -40,7 +40,7 @@
             <%= Html.Encode(item.Status.Name) %>
             </td>
         </tr>
-    
+
     <% } %>
 
     </table>

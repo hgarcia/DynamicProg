@@ -4,5 +4,5 @@
 
 ..\lib\specflow\specflow.exe nunitexecutionreport Specs\Specs.csproj /xmlTestResult:results.xml /out:specs.html
 
-..\lib\specflow\specflow.exe stepdefinitionreport Specs\Specs.csproj 
+..\lib\specflow\specflow.exe stepdefinitionreport Specs\Specs.csproj
 /out:specsSteps.html

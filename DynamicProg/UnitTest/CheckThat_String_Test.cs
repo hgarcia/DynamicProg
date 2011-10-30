@@ -73,7 +73,7 @@ namespace UnitTest
         {
             new Validator().CheckThat(() => _stringToTest)
                 .LengthIsBetween<ArgumentOutOfRangeException>(20, 100, null)
-                .ThrowFirst();         
+                .ThrowFirst();
 
         }
 
@@ -81,7 +81,7 @@ namespace UnitTest
         [ExpectedException(typeof (InvalidSizeException))]
         public void Check_that_a_string_length_is_between_two_limits_lower_bound_error()
         {
-            new Validator().CheckThat(() => _stringToTest).LengthIsBetween(20, 100).ThrowFirst();         
+            new Validator().CheckThat(() => _stringToTest).LengthIsBetween(20, 100).ThrowFirst();
         }
 
         [Test]
@@ -140,7 +140,7 @@ namespace UnitTest
         {
             new Validator().CheckThat(()=>_stringToTest).LengthEqualTo(10).ThrowFirst();
         }
- 
+
         [Test]
         public void Do_all_possible_checks_and_return_a_list()
         {

@@ -14,7 +14,7 @@ namespace Specifications
                                         };
 
         private Because of = () => _calculator.Add();
-                                 
+
 
         private It should_sum_both_numbers = () =>
                                   {

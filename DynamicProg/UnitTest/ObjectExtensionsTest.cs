@@ -82,7 +82,7 @@ namespace UnitTest
                                  };
 
            var mc = new MyClass().Hydrate(collection);
-                                               
+
            Assert.That(mc.PropertyOne, Is.EqualTo(VALUE_SET_FOR_PROPERTY_ONE));
            Assert.That(mc.PropertyTwo, Is.EqualTo("Value of property two"));
 

@@ -7,7 +7,7 @@ First steps to getting a working storevil project:
 3. Add the file ExampleContext.cs to your C# project
 4. Execute the following command line to run storevil:
 	storevil execute
-	
+
 Once this is working, you can try:
 
 - Opening the file example.feature and having a look at the syntax.
@@ -15,5 +15,5 @@ Once this is working, you can try:
 
 - Checking out an html report of the storevil results:
 	storevil execute -o storevil.output.html
-	
+
 - Making the failing & pending examples pass by adding methods to ExampleContext.cs

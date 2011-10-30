@@ -3,4 +3,4 @@ Put these files in a location (for example: C:\KillerTools\StorEvil)
 Add the location to your path
 
 Test by opening a new command prompt and typing "storevil"
-You should see some help text. 
+You should see some help text.

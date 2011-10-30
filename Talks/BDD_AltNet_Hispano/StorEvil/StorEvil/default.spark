@@ -1,29 +1,29 @@
 <html>
     <head>
-		<style type='text/css'>	
+		<style type='text/css'>
 		body {
 			background: #ddd;
 			font-family: Interstate, "Lucida Grande",  Verdana, Arial, helvetica, sans-serif;
 			font-size:13px;
-			color: black;			
+			color: black;
 		}
-		
+
 		div  {
-			padding:5x;			
+			padding:5x;
 		}
-		
+
 		h1, h2, h3 {
 			padding:5px;
 			margin:0px;
 		}
-		
-		.story {			
+
+		.story {
 			background: #eee;
 			padding:5px 5px 10px 15px;
 			outline: 1px solid #ccc;
 			margin-bottom:10px;
 		}
-		.scenario, .suggestions {	
+		.scenario, .suggestions {
 			background: #fff;
 			outline: 1px solid #ccc;
 			padding:5px 5px 5px 15px;
@@ -34,38 +34,38 @@
 		.scenario-failed, .summary-failed	{
 			background-color:#f99;
 		}
-	
+
 		.scenario-passed,.summary-passed	{
 			background-color:#8d8;
 		}
 		.scenario-pending,.summary-pending	{
 			background-color:#fd7;
 		}
-		
+
 		.suggestions h3 {
 			background: #ccc;
 		}
-		
+
 		.line-failed	{
-			color:red;			
+			color:red;
 		}
-		
+
 		.line-passed	{
 			color:green;
 		}
-		
+
 		.line-pending	{
 			color:#981;
 		}
-		
+
 		.line-failed, .line-passed, .line-pending {
 			font-family: Consolas, monospace
 		}
-		
+
 		.failure-message {
 			padding:10px;
 			font-weight:bold;
-			color:Red;			
+			color:Red;
 		}
 	</style>
     </head>
@@ -84,10 +84,10 @@
 		</div>
         <div class="no-stories-found" if="!Model.HasAnyStories()">
             No stories were found.
-        </div>		
+        </div>
         <div class="stories-wrapper" if="Model.HasAnyStories()">
-            <div class="story" each="var story in Model.Stories">    
-                <h2>${story.Summary.Replace("\r\n","<br/>")}</h2> 
+            <div class="story" each="var story in Model.Stories">
+                <h2>${story.Summary.Replace("\r\n","<br/>")}</h2>
 				<div class="summary">
 					<div class="summary-passed" if="story.PassedScenarios.Count > 0">
 						${story.PassedScenarios.Count} Passed
@@ -101,17 +101,17 @@
 				</div>
 				<div class="scenario" each="var scenario in story.Scenarios">
 					<h3 class="scenario-${scenario.Status.ToString().ToLower()}">${scenario.Name} - ${scenario.Status.ToString()}</h3>
-					<for each="var line in scenario.Lines">						
-						<div class="line-${line.Status.ToString().ToLower()}">						
+					<for each="var line in scenario.Lines">
+						<div class="line-${line.Status.ToString().ToLower()}">
 							${line.Text.Replace("\r\n","<br/>")}<br/>
 						</div>
 					</for>
-					
+
 					<div class="failure-message" if="!string.IsNullOrEmpty(scenario.FailureMessage)">
 						${scenario.FailureMessage}
 					</div>
 				</div>
-				
+
 				<div class="suggestions" if="Model.Suggestions.Count > 0">
 					<h3>Suggestions for implementing pending steps</h3>
 					<div class="suggestion" each="var suggestion in Model.Suggestions">

@@ -45,7 +45,7 @@ namespace UnitTest
 
         [Test]
         [ExpectedException(typeof(IndexOutOfRangeException))]
-        public void Check_that_an_enumeration_contains_a_list_of_elelemts()   
+        public void Check_that_an_enumeration_contains_a_list_of_elelemts()
         {
             new Validator().CheckThat(() => collection).Contains(new[]
                                                                      {
