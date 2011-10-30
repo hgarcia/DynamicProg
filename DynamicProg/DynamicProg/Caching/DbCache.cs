@@ -59,8 +59,8 @@ namespace DynamicProg.Caching
             _logger = logger;
             SetupQueries();
 
-            _db = String.IsNullOrEmpty(_configReader.ConnectionString) ? 
-                new SqlDb(Utils.GetConnectionString("ConnectionString")) : 
+            _db = String.IsNullOrEmpty(_configReader.ConnectionString) ?
+                new SqlDb(Utils.GetConnectionString("ConnectionString")) :
                 new SqlDb(_configReader.ConnectionString);
         }
         /// <summary>
@@ -200,7 +200,7 @@ namespace DynamicProg.Caching
         }
 
         ///<summary>
-        /// Adds an object to the cache for an absolute period of time. 
+        /// Adds an object to the cache for an absolute period of time.
         /// The object will be removed for sure after that period of time.
         /// The object may also be removed sooner if memory is needed.
         ///</summary>
@@ -234,7 +234,7 @@ namespace DynamicProg.Caching
         }
 
         ///<summary>
-        /// Adds an object to the cache for a rolling period of time. 
+        /// Adds an object to the cache for a rolling period of time.
         /// The object will be removed for sure after that period of time if there is no activity with it.
         /// The object may also be removed sooner if memory is needed.
         ///</summary>

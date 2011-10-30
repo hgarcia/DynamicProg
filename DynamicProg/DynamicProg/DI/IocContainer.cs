@@ -11,7 +11,7 @@ namespace DynamicProg.DI
 
         static IocContainer()
         {
-            _container = new WindsorContainer(new XmlInterpreter());   
+            _container = new WindsorContainer(new XmlInterpreter());
         }
 
 		public static T GetClassInstance<T>()

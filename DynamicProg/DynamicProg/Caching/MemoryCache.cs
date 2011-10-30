@@ -32,13 +32,13 @@ namespace DynamicProg.Caching
             _configReader = CachingConfiguration.GetConfig().MemoryCache;
 
             if (IsDisabled()) return;
-            
+
             _logger = logger;
 
             if (_cache != null) return;
 
-            _cache = HttpContext.Current == null ? 
-                HttpRuntime.Cache : 
+            _cache = HttpContext.Current == null ?
+                HttpRuntime.Cache :
                 HttpContext.Current.Cache;
         }
 
@@ -51,7 +51,7 @@ namespace DynamicProg.Caching
         public bool Add(string key, object item)
         {
             if (IsDisabled()) return false;
-            
+
             if (String.IsNullOrEmpty(key))
             {
                 _logger.LogWarning("Trying to use a null or empty key to store an object into the cache.");
@@ -124,7 +124,7 @@ namespace DynamicProg.Caching
         }
 
         ///<summary>
-        /// Adds an object to the cache for an absolute period of time. 
+        /// Adds an object to the cache for an absolute period of time.
         /// The object will be removed for sure after that period of time.
         /// The object may also be removed sooner if memory is needed.
         ///</summary>
@@ -156,7 +156,7 @@ namespace DynamicProg.Caching
         }
 
         ///<summary>
-        /// Adds an object to the cache for a rolling period of time. 
+        /// Adds an object to the cache for a rolling period of time.
         /// The object will be removed for sure after that period of time if there is no activity with it.
         /// The object may also be removed sooner if memory is needed.
         ///</summary>

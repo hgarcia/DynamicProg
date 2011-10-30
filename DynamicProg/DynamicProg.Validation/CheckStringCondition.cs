@@ -217,7 +217,7 @@ namespace DynamicProg.Validation
             {
                 HandleException(GetEqualToInvalidSizeException("length",_stringToValidate.Length,size));
             }
-            return this;           
+            return this;
         }
         public CheckStringCondition LengthEqualTo<E>(int size, object[] exceptionArguments) where E : Exception
         {

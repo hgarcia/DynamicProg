@@ -107,10 +107,10 @@ namespace DynamicProg.Extensions
                 {
                     obj.SetProperty(key, values[key]);
                 }
-                catch (Exception){continue;}         
+                catch (Exception){continue;}
             }
 
             return obj;
-        } 
+        }
     }
 }

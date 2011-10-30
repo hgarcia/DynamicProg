@@ -3,7 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 namespace Domain.Repositories
 {
-    public class Repository<TEntity> where TEntity : class, new() 
+    public class Repository<TEntity> where TEntity : class, new()
     {
         string path = @"C:\Development\Code\DynamicProg\Talks\BDD_AltNet_Hispano\Buscaperros\Web\";
         private IList<TEntity> getcollection<TEntity>()

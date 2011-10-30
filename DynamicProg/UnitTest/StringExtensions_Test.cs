@@ -36,7 +36,7 @@ namespace UnitTest
 
             Assert.AreEqual(control, result);
         }
-        
+
         [Test]
         public void Remove_given_numbers_of_characters_from_the_beginning_of_a_string()
         {

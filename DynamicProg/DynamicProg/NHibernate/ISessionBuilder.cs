@@ -16,7 +16,7 @@ namespace DynamicProg.NHibernate
 
 
         ///<summary>
-        /// Returns the <c>NHibernate.Cfg.Configuration</c> 
+        /// Returns the <c>NHibernate.Cfg.Configuration</c>
         ///</summary>
         ///<returns><c>NHibernate.Cfg.Configuration</c></returns>
         Configuration GetConfiguration();

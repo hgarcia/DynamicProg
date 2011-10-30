@@ -2,13 +2,13 @@
 
 /*
  * Part of the code have been taken from SubSonic - http://subsonicproject.com
- * 
+ *
  * The contents of this file are subject to the Mozilla Public
  * License Version 1.1 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of
  * the License at http://www.mozilla.org/MPL/
- * 
- * Software distributed under the License is distributed on an 
+ *
+ * Software distributed under the License is distributed on an
  * "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
  * implied. See the License for the specific language governing
  * rights and limitations under the License.
@@ -135,7 +135,7 @@ namespace DynamicProg.Net
         /// </summary>
         /// <param name="uri">The URL.</param>
         /// <param name="userName">The user name</param>
-        /// <param name="password">The password</param> 
+        /// <param name="password">The password</param>
         /// <returns>A string with the content of the web page</returns>
         /// <exception cref="ArgumentNullException"><c>userName</c> is null.</exception>
         public static string PostSecureWebPage(Uri uri, string userName, string password)
@@ -233,7 +233,7 @@ namespace DynamicProg.Net
             imgPattern.Append("[^>]*>"); //end of tag
             var imgRegex = new Regex(imgPattern.ToString(), RegexOptions.IgnoreCase);
 
-            //look for matches 
+            //look for matches
             Match imgcheck = imgRegex.Match(htmlPage);
             var imagelist = new ArrayList {"<BASE href=\"" + uri + "\">" + uri};
             //add base href for relative urls
@@ -276,7 +276,7 @@ namespace DynamicProg.Net
             hrefPattern.Append("[^>]*>.*?</a>"); //end of 'a' tag
             var hrefRegex = new Regex(hrefPattern.ToString(), RegexOptions.IgnoreCase);
 
-            //look for matches 
+            //look for matches
             Match hrefcheck = hrefRegex.Match(htmlPage);
             var linklist = new ArrayList {"<BASE href=\"" + uri + "\">" + uri};
             //add base href for relative links

@@ -2,13 +2,13 @@
 
 /*
  * Part of the code have been taken from SubSonic - http://subsonicproject.com
- * 
+ *
  * The contents of this file are subject to the Mozilla Public
  * License Version 1.1 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of
  * the License at http://www.mozilla.org/MPL/
- * 
- * Software distributed under the License is distributed on an 
+ *
+ * Software distributed under the License is distributed on an
  * "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
  * implied. See the License for the specific language governing
  * rights and limitations under the License.
@@ -396,7 +396,7 @@ namespace DynamicProg.Extensions
         }
 
         /// <summary>
-        /// Returns text that is located between the startText and endText. 
+        /// Returns text that is located between the startText and endText.
         /// If neither the star of end are located returns and empty string.
         /// </summary>
         public static string Mid(this string input, string startText, string endText)
@@ -596,7 +596,7 @@ namespace DynamicProg.Extensions
         }
 
         /// <summary>
-        /// Removes HTML XML tags 
+        /// Removes HTML XML tags
         /// </summary>
         public static string StripsHtml(this string s)
         {
@@ -604,7 +604,7 @@ namespace DynamicProg.Extensions
         }
 
         /// <summary>
-        /// Removes HTML XML tags 
+        /// Removes HTML XML tags
         /// </summary>
         public static string ReplacesHtml(this string s, string replaceWith)
         {

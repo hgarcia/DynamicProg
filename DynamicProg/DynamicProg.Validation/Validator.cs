@@ -38,19 +38,19 @@ namespace DynamicProg.Validation
             var condition = new CheckIntegerCondition(integerToCheck, _errors);
             return condition;
         }
-        
+
         public CheckDoubleCondition CheckThat(Func<double> doubleToCheck)
         {
             var condition = new CheckDoubleCondition(doubleToCheck,_errors);
             return condition;
         }
-        
+
         public CheckDecimalCondition CheckThat(Func<decimal> decimalToCheck)
         {
             var condition = new CheckDecimalCondition(decimalToCheck, _errors);
             return condition;
         }
-        
+
         public CheckEnumerableOfTCondition<T> CheckThat<T>(Func<IEnumerable<T>> enumerableToCheck)
         {
             var condition = new CheckEnumerableOfTCondition<T>(enumerableToCheck, _errors);

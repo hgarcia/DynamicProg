@@ -108,7 +108,7 @@ namespace DynamicProg.Validation
         {
             if(_dateTimeToCheck.CompareTo(beforeDate)<0 || _dateTimeToCheck.CompareTo(afterDate)>0)
             {
-                HandleException(new InvalidValueException(string.Format("The DateTime {0} value is {1} and should be between {2} and {3}", _variableProperties.Name, _dateTimeToCheck, afterDate,beforeDate)));            
+                HandleException(new InvalidValueException(string.Format("The DateTime {0} value is {1} and should be between {2} and {3}", _variableProperties.Name, _dateTimeToCheck, afterDate,beforeDate)));
             }
             return this;
         }

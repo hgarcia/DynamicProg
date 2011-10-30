@@ -8,7 +8,7 @@ using TechTalk.SpecFlow;
 namespace Specs
 {
 [Binding]
-    public class BrowseExistingPets 
+    public class BrowseExistingPets
     {
         [Given(@"I published some pets")]
         public void GivenIPublishedSomePets()
@@ -22,7 +22,7 @@ namespace Specs
             Assert.That(menuItem,Is.EqualTo("Publish"));
             ScenarioContext.Current.Pending();
         }
-    
+
         [Then(@"I should see a list of those pets")]
         public void ThenIShouldSeeAListOfThosePets()
         {

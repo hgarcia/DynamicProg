@@ -63,7 +63,7 @@ namespace DynamicProg.Validation
         protected InvalidSizeException GetLessOrEqualToInvalidSizeException(string dimensionName, decimal actualSize, decimal expectedSize)
         {
             return new InvalidSizeException(_variableProperties.Name, dimensionName, actualSize, "less or equal to", expectedSize);
-        }      
+        }
         protected InvalidSizeException GetEqualToInvalidSizeException(string dimensionName, decimal actualSize, decimal expectedSize)
         {
             return new InvalidSizeException(_variableProperties.Name, dimensionName, actualSize, "equal to", expectedSize);
@@ -72,6 +72,6 @@ namespace DynamicProg.Validation
         {
             return new InvalidSizeException(_variableProperties.Name, dimensionName, actualSize, "between " + lowerBound + " and", upperBound);
         }
-        
+
     }
 }
