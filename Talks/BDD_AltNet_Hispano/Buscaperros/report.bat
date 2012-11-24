@@ -1,1 +1,0 @@
-..\lib\specflow\specflow.exe nunitexecutionreport Specs\Specs.csproj /xmlTestResult:TestResult.xml /out:specs.html
