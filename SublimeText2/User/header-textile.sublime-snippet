@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+---
+layout: post
+title: ${1:title}
+summary: ${2:summary}
+categories: [${3:categories}]
+published: false
+---
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>txt-hd</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.textile</scope>
+</snippet>

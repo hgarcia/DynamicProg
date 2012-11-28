@@ -1,0 +1,13 @@
+{
+	"auto_upgrade_last_run": 1353858721,
+	"installed_packages":
+	[
+		"Djaneiro",
+		"Package Control",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"sublime-jslint",
+		"zenburn",
+		"ZenCoding"
+	]
+}

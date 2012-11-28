@@ -1,0 +1,5 @@
+[
+    { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+    { "keys": ["f5"], "command": "build" },
+    { "keys": ["ctrl+alt+f"], "command": "unfold_all" }
+]

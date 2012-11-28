@@ -1,0 +1,4 @@
+{
+	"cmd": ["vows", "$file", "--spec"],
+	"selector": "source.js"
+}
