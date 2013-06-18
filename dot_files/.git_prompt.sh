@@ -1,14 +1,27 @@
-#Original: https://gist.github.com/halbtuerke/31934
-
-       RED="\[\033[0;31m\]"
+        RED="\[\033[0;31m\]"
      YELLOW="\[\033[0;33m\]"
-     GREEN="\[\033[0;32m\]"
+ 	  GREEN="\[\033[0;32m\]"
        BLUE="\[\033[0;34m\]"
   LIGHT_RED="\[\033[1;31m\]"
 LIGHT_GREEN="\[\033[1;32m\]"
       WHITE="\[\033[1;37m\]"
  LIGHT_GRAY="\[\033[0;37m\]"
  COLOR_NONE="\[\e[0m\]"
+
+alias gst="git status"
+alias gb="git branch"
+alias gp="git pull"
+alias gl="git log"
+alias ga="git add ."
+alias gA="git add -A"
+
+function gm() {
+  git commit -m"$1";
+}
+
+function gco() {
+  git checkout $1;
+}
  
 function parse_git_branch {
  
