@@ -14,7 +14,7 @@ alias gp="git pull"
 alias gl="git log"
 alias ga="git add ."
 alias gA="git add -A"
-alias gpr="git pull rebase"
+alias gpr="git pull --rebase"
 
 function gm() {
   git merge $1
