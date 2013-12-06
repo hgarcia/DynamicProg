@@ -15,6 +15,9 @@ alias gl="git log"
 alias ga="git add ."
 alias gA="git add -A"
 alias gpr="git pull --rebase"
+alias grc="git rebase --continue"
+alias gca="git commit --amend"
+alias gcan="git commit --amend --no-edit"
 
 function gm() {
   git merge $1
