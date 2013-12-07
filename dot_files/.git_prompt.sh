@@ -18,19 +18,32 @@ alias gpr="git pull --rebase"
 alias grc="git rebase --continue"
 alias gca="git commit --amend"
 alias gcan="git commit --amend --no-edit"
+alias gpush="git push"
 
 function gm() {
-  git merge $1
+  git merge $1;
 }
 
 function gc() {
   git commit -m"$1";
 }
 
+function gAc() {
+  gA && gc;
+}
+
+function gAcan() {
+  gA && gcan;
+}
+
 function gco() {
   git checkout $1;
 }
- 
+
+function gprp() {
+  gpr && gpush
+}
+
 function parse_git_branch {
  
   git rev-parse --git-dir &> /dev/null
