@@ -29,11 +29,12 @@ function gc() {
 }
 
 function gAc() {
-  gA && gc;
+  echo $1
+  git add -A && git commit -m"$1";
 }
 
 function gAcan() {
-  gA && gcan;
+  git add -A && git commit --amend --no-edit;
 }
 
 function gco() {
@@ -41,7 +42,7 @@ function gco() {
 }
 
 function gprp() {
-  gpr && gpush
+  git pull --rebase && git push
 }
 
 function parse_git_branch {
