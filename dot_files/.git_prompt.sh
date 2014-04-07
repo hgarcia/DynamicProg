@@ -74,7 +74,6 @@ function parse_git_branch {
  
 function prompt_func() {
     previous_return_value=$?;
-    # prompt="${TITLEBAR}$BLUE[$RED\w$GREEN$(__git_ps1)$YELLOW$(git_dirty_flag)$BLUE]$COLOR_NONE "
     prompt="${TITLEBAR}${BLUE}[${RED}\w${GREEN}$(parse_git_branch)${BLUE}]${COLOR_NONE} "
     if test $previous_return_value -eq 0
     then
